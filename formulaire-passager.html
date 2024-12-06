@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Demander Covoiturage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Images/LogoTinquietetroul.png" />
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="style/images.css" rel="stylesheet" type="text/css">
+  <link href="style/navigation.css" rel="stylesheet" type="text/css">
+  <link href="style/form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <a href="./index.html">
+    <header class="stick-me">
+      <div class="navbar-wrapper">
+        <div class="Logos">
+          <img src="./Images/Stormshield.png" alt="Stromshield Logo" id="Logo">
+          <img src="./Images/Stomshieldtext.png" alt="Stromshield Text" id="LogoText"><img src="./Images/x.png" alt="X"
+            id="X"><img src="./Images/tinkiet&roultext.png" alt="Tinkiet&Roul Text" id="LogoText">
+          <img src="./Images/LogoTinquietetroul.png" alt="Tinkiet & Roul Logo" id="Logo">
+        </div>
+        <nav class="navbar">
+          <a href="index.html" class="nav-item" id="current">Accueil</a>
+          <a href="location.html" class="nav-item">Location</a>
+          <a href="formulaire-conducteur.html" class="nav-item">Covoiturage</a>
+        </nav>
+      </div>
+    </header>
+  </a>
+  <main>
+    <div class="bg-image"></div>
+    <section>
+      <div class="formbutton-wrapper">
+        <div class="formbutton">
+          <a href="formulaire-conducteur.html" class="formbutton-item">Proposer Covoiturage</a>
+          <a href="formulaire-passager.html" class="formbutton-item" id="current">Demander Covoiturage</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="form-container">
+        <form method="post" action="thankyou.html">
+          <div class="center">
+            <h2>Formulaire de proposition de covoiturage</h2>
+          </div>
+
+          <label for="nom">Votre nom :</label>
+          <input type="text" id="nom" name="nom" required>
+
+          <label for="prenom">Votre prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
+
+          <label for="age">Votre Age :</label>
+          <input type="number" id="age" name="age" required min="18" max="100">
+
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="startPlace">Lieu de départ (approximatif) :</label>
+          <input type="text" id="startPlace" name="startPlace" required>
+
+          <label>Horaire demandé :</label>
+          <div class="scrollable">
+            <select id="horaire" name="horaire" required>
+              <option value="08:00">08:00</option>
+              <option value="08:30">08:30</option>
+              <option value="09:00">09:00</option>
+              <option value="09:30">09:30</option>
+              <option value="10:00">10:00</option>
+              <option value="10:30">10:30</option>
+            </select>
+          </div>
+
+          <label for="tarif">Budget (éventuel) :</label>
+          <input type="text" id="tarif" name="tarif">
+
+          <input type="submit" value="Valider">
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+<footer>
+  <a href="./error404.html">Contact</a>
+  |
+  <a href="./error404.html">Condition G&#233n&#233rales d'Utilisation</a>
+  |
+  <a href="./error404.html">A propos</a>
+</footer>
+
+</html>

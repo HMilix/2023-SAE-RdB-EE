@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/LogoTinquietetroul.png" />
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/images.css" rel="stylesheet" type="text/css">
+    <link href="style/navigation.css" rel="stylesheet" type="text/css">
+    <link href="style/grid.css" rel="stylesheet" type="text/css">
+    <link href="style/form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a href="./index.html">
+        <header class="stick-me">
+            <div class="navbar-wrapper">
+                <div class="Logos">
+                    <img src="./Images/Stormshield.png" alt="Stromshield Logo" id="Logo">
+                    <img src="./Images/Stomshieldtext.png" alt="Stromshield Text" id="LogoText"><img
+                        src="./Images/x.png" alt="X" id="X"><img src="./Images/tinkiet&roultext.png"
+                        alt="Tinkiet&Roul Text" id="LogoText">
+                    <img src="./Images/LogoTinquietetroul.png" alt="Tinkiet & Roul Logo" id="Logo">
+                </div>
+                <nav class="navbar">
+                    <a href="index.html" class="nav-item">Accueil</a>
+                    <a href="location.html" class="nav-item" id="current">Location</a>
+                    <a href="formulaire-conducteur.html" class="nav-item">Covoiturage</a>
+                </nav>
+            </div>
+        </header>
+    </a>
+    <main>
+        <div class="bg-image"></div>
+        <section>
+            <div class="grid-container">
+                <div class="grid-item" id="top-grid">Location Vélo</div>
+                <div class="grid-item" id="top-grid">Location Voiture</div>
+                <div class="grid-item" id="top-grid">Location Trottinette</div>
+                <div class="grid-item" id="middle-grid">
+                    <details>
+                        <summary>Vélos disponibles à la location</summary>
+                        <div>
+                            Vélo de randonnée électrique Kalkhoff Entice 1.B Move International
+                            <img src="./Images/velo-model1.jpg"
+                                alt="Vélo de randonnée électrique Kalkhoff Entice 1.B Move International">
+                            Prix location : 36€/j
+                        </div>
+                        <hr>
+                        <div>
+                            Electra Loft 7i EQ Step Thru, gris
+                            <img src="./Images/velo-model2.jpg" alt="Electra Loft 7i EQ Step Thru, gris">
+                            Prix location : 10€/j
+                        </div>
+                        <hr>
+                        <div>
+                            NS Bikes Crust 27,5", turquoise
+                            <img src="./Images/velo-model3.jpg" alt="NS Bikes Crust 27,5, turquoise">
+                            Prix location : 18€/j
+                        </div>
+                    </details>
+                </div>
+                <div class="grid-item" id="middle-grid">
+                    <details>
+                        <summary>Voitures disponibles à la location</summary>
+                        <div>
+                            BMW X1
+                            <img src="./Images/voiture-model1.png" alt="BMW X1">
+                            Prix location : 166,95€/j
+                        </div>
+                        <hr>
+                        <div>
+                            Peugeot 308
+                            <img src="./Images/voiture-model2.png" alt="Peugeot 308">
+                            Prix location : 103,53€/j
+                        </div>
+                        <hr>
+                        <div>
+                            Volvo XC60
+                            <img src="./Images/voiture-model3.png" alt="Volvo XC60">
+                            Prix location : 186,64€/j
+                        </div>
+                    </details>
+                </div>
+                <div class="grid-item" id="middle-grid">
+                    <details>
+                        <summary>Trottinettes disponibles à la location</summary>
+                        <div>
+                            OCEAN DRIVE X9 Max
+                            <img src="./Images/Trot-model1.jpg" alt="OCEAN DRIVE X9 Max">
+                            Prix location : 22€/j
+                        </div>
+                        <hr>
+                        <div>
+                            SpeedTrott XT 1200
+                            <img src="./Images/Trot-model2.jpg" alt="SpeedTrott XT 1200">
+                            Prix location : 33€/j
+                        </div>
+                        <hr>
+                        <div>
+                            Xiaomi Mi Electric Scooter 4 Lite
+                            <img src="./Images/Trot-model3.jpg" alt="Xiaomi Mi Electric Scooter 4 Lite">
+                            Prix location : 18€/j
+                        </div>
+                    </details>
+                </div>
+                <div class="grid-item" id="bottom-grid">
+                    <div class="form-container">
+                        <form method="post" action="thankyou.html" id="form">
+
+                            <label for="nom">Votre nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+
+                            <label for="prenom">Votre prénom :</label>
+                            <input type="text" id="prenom" name="prenom" required>
+
+                            <label for="age">Votre Age :</label>
+                            <input type="number" id="age" name="age" required min="18" max="100">
+
+                            <label for="email">Adresse e-mail :</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="telephone">Votre numéro de téléphone :</label>
+                            <input type="text" id="telephone" name="telephone" required>
+
+                            <label for="place">Lieu de retrait/retour :</label>
+                            <input type="text" id="place" name="place" required>
+
+                            <label for="date">Date de retrait :</label>
+                            <input type="text" id="date" name="date" required>
+
+                            <label for="choice">Selectionez le modèle :</label>
+                            <select id="model" name="Modèle" required>
+                                <option value="Modèle 1">Vélo de randonnée électrique Kalkhoff Entice 1.B Move
+                                    International</option>
+                                <option value="Modèle 2">Electra Loft 7i EQ Step Thru, gris</option>
+                                <option value="Modèle 3">NS Bikes Crust 27,5", turquoise</option>
+                            </select>
+
+                            <input type="submit" value="Louer">
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-item" id="bottom-grid">
+                    <div class="form-container">
+                        <form method="post" action="thankyou.html" id="form">
+
+                            <label for="nom">Votre nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+
+                            <label for="prenom">Votre prénom :</label>
+                            <input type="text" id="prenom" name="prenom" required>
+
+                            <label for="age">Votre Age :</label>
+                            <input type="number" id="age" name="age" required min="18" max="100">
+
+                            <label for="email">Adresse e-mail :</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="telephone">Votre numéro de téléphone :</label>
+                            <input type="text" id="telephone" name="telephone" required>
+
+                            <label for="place">Lieu de retrait/retour :</label>
+                            <input type="text" id="place" name="place" required>
+
+                            <label for="date">Date de retrait :</label>
+                            <input type="text" id="date" name="date" required>
+
+                            <label for="choice">Selectionez le modèle :</label>
+                            <select id="model" name="Modèle" required>
+                                <option value="Modèle 1">BMW X1</option>
+                                <option value="Modèle 2">Peugeot 308</option>
+                                <option value="Modèle 3">Volvo XC60</option>
+                            </select>
+
+                            <input type="submit" value="Louer">
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-item" id="bottom-grid">
+                    <div class="form-container">
+                        <form method="post" action="thankyou.html" id="form">
+
+                            <label for="nom">Votre nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+
+                            <label for="prenom">Votre prénom :</label>
+                            <input type="text" id="prenom" name="prenom" required>
+
+                            <label for="age">Votre Age :</label>
+                            <input type="number" id="age" name="age" required min="18" max="100">
+
+                            <label for="email">Adresse e-mail :</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="telephone">Votre numéro de téléphone :</label>
+                            <input type="text" id="telephone" name="telephone" required>
+
+                            <label for="place">Lieu de retrait/retour :</label>
+                            <input type="text" id="place" name="place" required>
+
+                            <label for="date">Date de retrait :</label>
+                            <input type="text" id="date" name="date" required>
+
+                            <label for="choice">Selectionez le modèle :</label>
+                            <select id="model" name="Modèle" required>
+                                <option value="Modèle 1">OCEAN DRIVE X9 Max</option>
+                                <option value="Modèle 2">SpeedTrott XT 1200</option>
+                                <option value="Modèle 3">Xiaomi Mi Electric Scooter 4 Lite</option>
+                            </select>
+
+                            <input type="submit" value="Louer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer>
+    <a href="./error404.html">Contact</a>
+    |
+    <a href="./error404.html">Condition G&#233n&#233rales d'Utilisation</a>
+    |
+    <a href="./error404.html">A propos</a>
+</footer>
+
+</html>

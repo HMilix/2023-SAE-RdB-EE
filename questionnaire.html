@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="Images/LogoTinquietetroul.png" />
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="style/images.css" rel="stylesheet" type="text/css">
+  <link href="style/navigation.css" rel="stylesheet" type="text/css">
+  <link href="style/form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <a href="./index.html">
+    <header class="stick-me">
+      <div class="navbar-wrapper">
+        <div class="Logos">
+          <img src="./Images/Stormshield.png" alt="Stromshield Logo" id="Logo">
+          <img src="./Images/Stomshieldtext.png" alt="Stromshield Text" id="LogoText"><img src="./Images/x.png" alt="X"
+            id="X"><img src="./Images/tinkiet&roultext.png" alt="Tinkiet&Roul Text" id="LogoText">
+          <img src="./Images/LogoTinquietetroul.png" alt="Tinkiet & Roul Logo" id="Logo">
+        </div>
+        <nav class="navbar">
+          <a href="index.html" class="nav-item" id="current">Accueil</a>
+          <a href="location.html" class="nav-item">Location</a>
+          <a href="formulaire-conducteur.html" class="nav-item">Covoiturage</a>
+        </nav>
+      </div>
+    </header>
+  </a>
+  <main>
+    <div class="bg-image"></div>
+    <section>
+      <div class="textbox">
+        <h1>Bienvenue chez Tinkiet&Roul !</h1>
+        <h3>La plateforme de covoiturage o&#249 vous n&#8217aurez plus &#224 vous soucier des soucis de transports !
+        </h3>
+        <p>Covoiturez ou louez un v&#233hicule en toute s&#233curit&#233 !</p>
+        <p>De plus, nous mettons un point d'honneur sur l'&#233cologie.</p>
+        <p>Seuls des v&#233hicules &#233lectriques sont propos&#233s en location pour le bien de l&#8217environnement.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="formbutton-wrapper">
+        <div class="formbutton">
+          <a href="./index.html" class="formbutton-item">Avis des utilisateurs</a>
+          <a href="#" class="formbutton-item" id="current">Questionnaire sur le covoiturage</a>
+        </div>
+      </div>
+      <form method="post" action="thankyou.html">
+        <label for="knowCovoit">Qu'est ce qui vous a fait connaître le covoiturage ?</label>
+        <input type="text" id="knowCovoit" name="knowCovoit" required>
+
+        <label for="experiencedPass">Avez-vous déjà participé à un covoiturage en temps que passager ? Si oui, quel
+          est votre ressenti quant à votre/vos expérience(s) ?</label>
+        <input type="text" id="experienced" name="experienced" required>
+
+        <label for="experiencedCond">Avez-vous déjà participé à un covoiturage en temps que conducteur ? Si oui,
+          quel est votre ressenti quant à votre/vos expérience(s) ?</label>
+        <input type="text" id="experiencedCond" name="experiencedCond" required>
+
+        <label for="frequency">Quelle est la fréquence à laquelle vous covoiturez ?</label>
+        <div>
+          <input type="radio" name="frequency" id="frequency_1" value="quotidien" />
+          <label for="frequency_1">Quotidiennement</label>
+        </div>
+
+        <div>
+          <input type="radio" name="frequency" id="frequency_2" value="medium" />
+          <label for="frequency_2">Entre 2 et 3 fois par semaine</label>
+        </div>
+
+        <div>
+          <input type="radio" name="frequency" id="frequency_3" value="large" />
+          <label for="frequency_3">Entre 2 et 3 fois par mois</label>
+        </div>
+
+        <div>
+          <input type="radio" name="frequency" id="frequency_4" value="without" />
+          <label for="frequency_4">Sans régularité</label>
+        </div>
+
+        <div>
+          <input type="radio" name="frequency" id="frequency_5" value="never" />
+          <label for="frequency_5">Jamais</label>
+        </div>
+        <br>
+        <label for="aspects">Quels aspects du covoiturage vous motive à le plus faire du covoiturage ? (Conducteur
+          ou Passager)</label>
+        <div>
+          <input type="checkbox" id="aspects_1" name="moins_chers" value="1" />
+          <label for="aspects_1">Coûts moins importants</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="aspects_2" name="impact_reduit" value="2" />
+          <label for="aspects_2">Impact environnemental réduit</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="aspects_3" name="social" value="3" />
+          <label for="aspects_3">Contact social lors de longs trajets</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="aspects_4" name="autre" value="4" />
+          <label for="aspects_4">Autre</label>
+          <input type="text" name="other" />
+        </div>
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+  </main>
+</body>
+<footer>
+  <a href="./error404.html">Contact</a>
+  |
+  <a href="./error404.html">Condition G&#233n&#233rales d'Utilisation</a>
+  |
+  <a href="./error404.html">A propos</a>
+</footer>
+
+</html>
